@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # REST API
 
 NodeJS function running on AWS Lambda using the traditional Serverless Framework. The deployed function does not include any event definitions as well as any kind of persistence (database).
@@ -71,3 +72,6 @@ Which should result in response similar to the following:
       ....
 
 ```
+=======
+# github-user-gists-2
+>>>>>>> da45e58 (Initial commit)

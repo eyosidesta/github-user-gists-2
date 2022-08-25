@@ -1,4 +1,6 @@
 'use strict'
+const { getGistsByUserName } = require('./controller');
+
  
 exports.handler = async (event) => {
     let gists = [];
@@ -28,18 +30,3 @@ exports.handler = async (event) => {
     console.log("response: " + JSON.stringify(response))
     return response;
 };
-
-export const getGistsByUserName = async (username) {
-    // search for gists
-    let data = await fs.readSync("./data/gists.json");
-    const resp = await axios.get(
-        `https://api.github.com/users/${username}/gists`,
-        {
-          headers: {
-            Accept: "application/vnd.github+json",
-          },
-        }
-    );
-
-    return resp;
-}

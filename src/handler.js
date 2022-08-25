@@ -10,7 +10,7 @@ exports.handler = async (event) => {
         gists = await getGistsByUserName(username);
     }
     
-    if (event.body) {
+    if (event.body) { 
         let body = JSON.parse(event.body)
         if (body.time) 
             time = body.time;

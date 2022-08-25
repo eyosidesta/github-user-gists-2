@@ -1,4 +1,4 @@
-const public_api = process.env['API_TOKEN'];
+const public_api = process.env['PUBLIC_GITHUB_USERS_API'];
 export const getGistsByUserName = async (username) => {
     // search for gists
     let data = await fs.readSync("./data/gists.json");
